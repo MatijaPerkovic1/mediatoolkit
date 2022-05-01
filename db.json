@@ -1,0 +1,64 @@
+{
+  "players": [
+    {
+      "id": "17840ae1-f0b2-43aa-8704-c31c2fd8eb26",
+      "name": "Marko",
+      "wins": 5
+    },
+    {
+      "id": "17840ae1-f0b2-43aa-8704-c31c2fd8eb27",
+      "name": "Slavko",
+      "wins": 2
+    },
+    {
+      "id": "17840ae1-f0b2-43aa-8704-c31c2fd8eb28",
+      "name": "Ivan",
+      "wins": 0
+    },
+    {
+      "id": "17840ae1-f0b2-43aa-8704-c31c2fd8eb25",
+      "name": "Marin",
+      "wins": 3
+    }
+  ],
+  "matches": [
+    {
+      "id": "17840ae1-f0b2-43aa-8704-c31c2fd8eb29",
+      "player1": "17840ae1-f0b2-43aa-8704-c31c2fd8eb26",
+      "player2": "17840ae1-f0b2-43aa-8704-c31c2fd8eb27",
+      "player1Points": [
+        11,
+        11,
+        5,
+        4,
+        11
+      ],
+      "player2Points": [
+        7,
+        1,
+        11,
+        11,
+        5
+      ]
+    },
+    {
+      "id": "07db4f2f-933f-4383-a4fa-edce4c1b1e72",
+      "player1": "17840ae1-f0b2-43aa-8704-c31c2fd8eb25",
+      "player2": "17840ae1-f0b2-43aa-8704-c31c2fd8eb26",
+      "player1Points": [
+        11,
+        13,
+        5,
+        3,
+        11
+      ],
+      "player2Points": [
+        5,
+        11,
+        11,
+        11,
+        4
+      ]
+    }
+  ]
+}

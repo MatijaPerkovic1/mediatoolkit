@@ -1,0 +1,19 @@
+table {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+tr:hover {
+  background-color: lightgray;
+  pointer-events: visible;
+  cursor: pointer;
+}
+
+.score {
+  letter-spacing: 25px;
+}
+
+th {
+  text-align: center !important;
+}

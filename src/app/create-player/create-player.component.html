@@ -1,0 +1,17 @@
+<div class="form">
+    <form [formGroup]="playerForm" (ngSubmit)="submitForm()">
+        <fieldset [disabled]="isSubmitting">
+          <fieldset class="form-group">
+            <input
+              formControlName="name"
+              placeholder="Name"
+              class="form-control form-control-lg"
+              type="text"/>
+          </fieldset>
+
+          <button class="btn btn-lg btn-primary pull-xs-right" [disabled]="!playerForm.valid" type="submit">
+            Create
+          </button>
+        </fieldset>
+      </form>
+</div>

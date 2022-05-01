@@ -1,0 +1,10 @@
+<div id="matchDetail">
+    <h3>{{match?.player1}}</h3>
+    <div>
+        <p *ngFor="let points of match?.player1Points">{{points}}</p>
+    </div>
+    <div>
+        <p *ngFor="let points of match?.player2Points">{{points}}</p>
+    </div>
+    <h3>{{match?.player2}}</h3>
+</div>

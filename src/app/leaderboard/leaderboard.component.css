@@ -1,0 +1,14 @@
+table {
+  width: 80%;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #5c5b5b;
+}
+
+tr:hover {
+  background-color: lightgray;
+}

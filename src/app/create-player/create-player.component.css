@@ -1,0 +1,44 @@
+input {
+  width: 80%;
+  height: 30px;
+  background: #e0dede;
+  justify-content: center;
+  display: flex;
+  margin: 20px auto;
+  padding: 20px;
+  border: none;
+  outline: none;
+}
+
+button {
+  width: 60%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: blue;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 40%;
+}
+
+fieldset {
+  border: none;
+}
+
+.form {
+  height: 200px;
+  width: 300px;
+  border: 1px solid lightgray;
+  margin: auto;
+  margin-top: 50px;
+}

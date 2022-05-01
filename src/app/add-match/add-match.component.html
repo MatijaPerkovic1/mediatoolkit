@@ -1,0 +1,139 @@
+<div class="form">
+    <form [formGroup]="matchForm" (ngSubmit)="submitForm()" id="matchForm">
+        <fieldset [disabled]="isSubmitting">
+          <fieldset class="form-group">
+              <select
+                class="custom-select mb-3"
+                (change)="changePlayer()"
+                formControlName="player1"
+              >
+                <option value="">Choose Player 1</option>
+                <option *ngFor="let player of players" [ngValue]="player" [disabled]="selectedPlayers ? selectedPlayers.includes(player) : false">
+                  {{ player.name }}
+                </option>
+              </select>
+              
+              <div formGroupName="p1sets">
+                <div class="setInput">
+                  <h3>1st Set</h3>
+                  <input
+                    formControlName="s1p1"
+                    placeholder="Points"
+                    class="form-control form-control-lg"
+                    type="number"
+                    min="0"/>
+                </div>
+
+                <div class="setInput">
+                  <h3>2nd Set</h3>
+                  <input
+                    formControlName="s2p1"
+                    placeholder="Points"
+                    class="form-control form-control-lg"
+                    type="number"
+                    min="0"/>
+                </div>
+                
+                <div class="setInput">
+                  <h3>3rd Set</h3>
+                  <input
+                    formControlName="s3p1"
+                    placeholder="Points"
+                    class="form-control form-control-lg"
+                    type="number"
+                    min="0"/>
+                </div>
+                
+                <div class="setInput">
+                  <h3>4th Set</h3>
+                  <input
+                    formControlName="s4p1"
+                    placeholder="Points"
+                    class="form-control form-control-lg"
+                    type="number"
+                    min="0"/>
+                </div>
+
+                <div class="setInput">
+                  <h3>5th Set</h3>
+                  <input
+                    formControlName="s5p1"
+                    placeholder="Points"
+                    class="form-control form-control-lg"
+                    type="number"
+                    min="0"/>
+                </div>
+              </div>
+
+              <select
+                class="custom-select mb-3"
+                (change)="changePlayer()"
+                formControlName="player2"
+              >
+                <option value="">Choose Player 2</option>
+                <option *ngFor="let player of players" [ngValue]="player" [disabled]="selectedPlayers ? selectedPlayers.includes(player) : false">
+                  {{ player.name }}
+                </option>
+              </select>
+              <div formGroupName="p2sets">
+                <div class="setInput">
+                  <h3>1st Set</h3>
+                  <input
+                    formControlName="s1p2"
+                    placeholder="Points"
+                    class="form-control form-control-lg"
+                    type="number"
+                    min="0"/>
+                </div>
+
+                <div class="setInput">
+                  <h3>2nd Set</h3>
+                  <input
+                    formControlName="s2p2"
+                    placeholder="Points"
+                    class="form-control form-control-lg"
+                    type="number"
+                    min="0"/>
+                </div>
+
+                <div class="setInput">
+                  <h3>3rd Set</h3>
+                  <input
+                    formControlName="s3p2"
+                    placeholder="Points"
+                    class="form-control form-control-lg"
+                    type="number"
+                    min="0"/>
+                </div>
+
+                <div class="setInput">
+                  <h3>4th Set</h3>
+                  <input
+                    formControlName="s4p2"
+                    placeholder="Points"
+                    class="form-control form-control-lg"
+                    type="number"
+                    min="0"/>
+                </div>
+
+                <div class="setInput">
+                  <h3>5th Set</h3>
+                  <input
+                    formControlName="s5p2"
+                    placeholder="Points"
+                    class="form-control form-control-lg"
+                    type="number"
+                  min="0"/>
+                </div>
+              </div>
+          </fieldset>
+          <button class="btn btn-lg btn-primary pull-xs-right" [disabled]="!matchForm.valid" type="submit">
+            Create
+          </button>
+        </fieldset>
+        <div *ngIf="matchForm.hasError('setValidationError')" class="error">
+          Given score is invalid!
+        </div>
+      </form>
+      
+</div>

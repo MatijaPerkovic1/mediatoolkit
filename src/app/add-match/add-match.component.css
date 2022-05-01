@@ -1,0 +1,59 @@
+#matchForm {
+  width: 60%;
+  margin: auto;
+  margin-top: 5%;
+  padding: 50px;
+  border: 1px solid lightgray;
+}
+
+fieldset {
+  border: none;
+}
+
+select {
+  padding: 10px;
+  margin-top: 20px;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  border: 0;
+  font-family: inherit;
+  padding: 10px 10px 0 12px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 5px;
+}
+
+h3 {
+  display: block;
+  padding: 10px 10px 0 16px;
+}
+
+.setInput {
+  display: inline-block;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
+
+button {
+  width: 20%;
+  height: 40px;
+  margin: 10px auto;
+  justify-content: center;
+  display: block;
+  color: #fff;
+  background: blue;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
